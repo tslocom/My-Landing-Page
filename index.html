@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
+        <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -14,13 +14,13 @@
     <title>Travis Slocom's Portfolio</title>
 </head>
 <main>
-    <div id="home" class="main-container">
-        <!-- This is the Navigation Bar -->
-         <nav class="navbar">
+    <div id="home" class="main-container">  
+        <!-- This is the Navigation Bar --> 
+        <nav class="navbar">
             <img src="logo.png" alt="Logo" class="logo">
-            <!--This is the Hamburger Icon-->
-            <!--This is the Navigation Menu-->
-            <div class="menu">
+
+            <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+            <div id="menu" class="menu">
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#hero">About Me</a></li>
@@ -76,4 +76,11 @@
             <p>&copy; 2025 Travis Slocom. All rights reserved.</p>
         </footer>
     </div>
+    <!-- JavaScript for Toggling the Menu -->
+    <script>
+    function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("active");
+    }
+    </script>
 </main>
